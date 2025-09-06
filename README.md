@@ -4,6 +4,8 @@
 This project is a **Spring Boot REST API** that provides:
 - User Registration
 - User Login (JWT authentication)
+-  Secured Employee CRUD operations (Create, Read, Update, Delete)
+
 
 
 JWT (JSON Web Token) is used for authentication, ensuring that only authorized users can access protected endpoints.
@@ -14,6 +16,7 @@ JWT (JSON Web Token) is used for authentication, ensuring that only authorized u
 - Register new users
 - Login with email and password
 - Generate JWT token after successful login
+- **Employee CRUD** operations (secured)
 - Secure endpoints with JWT filter
 - Role-based security (optional)
 - Validation on input fields

@@ -38,8 +38,10 @@ public class SecurityConfig {
 			.authorizeHttpRequests(auth ->auth
 					.requestMatchers("/auth/**").permitAll()
 					.requestMatchers("/actuator/health").permitAll()
+					.requestMatchers("/employee/**").authenticated()
 					.requestMatchers("/employees/all").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
 					.requestMatchers("/employee/**").hasAnyAuthority("ROLE_ADMIN")
+				
 					.anyRequest().authenticated()
 					)
 			.authenticationProvider(authProvider())

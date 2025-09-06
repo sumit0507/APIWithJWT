@@ -1,0 +1,12 @@
+
+
+# Sensitive files
+src/main/resources/application.properties
+
+# Build output
+/target
+
+# IDE files
+.idea/
+*.iml
+*.log
